@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+<!--Um pouco de CSS-->
+    <style>
+        article{
+            padding: 15px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #eee;
+            margin-bottom: 10px;
+        }
+    </style>
+<!--Função para validar senha-->
+<script>
+    function validarSenha(){
+        senha1 = document.f1.senha1.value
+        senha2 = document.f1.senha2.value
+     
+        if (senha1 == senha2)
+            alert("SENHAS IGUAIS")
+        else
+            alert("SENHAS DIFERENTES")
+    }
+    </script>
+
+</head>
+<body>
+<!--Acrescentar uma imagem no html. Para iss, insira a imagem com o src, chame o map, nomeie e o link com o # no usemap-->
+<img src="logo-aqui.png" usemap="#Logo">
+<map name="Logo">
+    <!--Criar uma área clicavel na imagem inserida-->
+    <area alt="Sua-logo-aqui" shape="rect" href="https://www.fabricadeprogramador.com.br/" target="-blank" coords="1,1,249,195">
+</map>
+<h1>Cadastro de Usuário</h1>
+<!--a sintax article cria articulações, outros "corpos" dentro do principal-->
+<article>
+<!--cria espaço para digitar-->    
+     <div>  
+        <label> Usuário </label>
+        <input>
+    </div> 
+    <div>  
+        <label> Senha </label>
+        <input type="password" name="senha1" size="8">
+    </div>
+    <div>  
+        <label> Confirmar Senha </label>
+        <input type="password" name="senha2" size="8">
+    </div> 
+    <div>  
+        <label> E-mail </label>
+        <input>
+    </div> 
+    <div>  
+        <label> Nome Completo </label>
+        <input>
+    </div>
+    <div>  
+        <label> CPF/CNPJ </label>
+        <input>
+    </div>  
+    <div>
+        <label> Telefone </label>
+        <input>
+    </div>
+    <div>
+        <label> Celular </label>
+        <input>
+    </div>
+   
+<!--Lista com busca e filtro-->   
+    <div>       
+        <label> UF </label>
+        <input list="f_estados" type="f_estado2">
+        <datalist id="f_estados">
+            
+            <option value="AC">	Acre	</option>
+            <option value="AL">	Alagoas	</option>
+            <option value="AP">	Amapá	</option>
+            <option value="AM">	Amazonas	</option>
+            <option value="BA">	Bahia	</option>
+            <option value="CE">	Ceará	</option>
+            <option value="DF">	Distrito Federal	</option>
+            <option value="ES">	Espírito Santo	</option>
+            <option value="GO">	Goiás	</option>
+            <option value="MA">	Maranhão	</option>
+            <option value="MT">	Mato Grosso	</option>
+            <option value="MS">	Mato Grosso do Sul	</option>
+            <option value="MG">	Minas Gerais	</option>
+            <option value="PA">	Pará	</option>
+            <option value="PB">	Paraíba	</option>
+            <option value="PR">	Paraná	</option>
+            <option value="PE">	Pernambuco	</option>
+            <option value="PI">	Piauí	</option>
+            <option value="RJ">	Rio de Janeiro	</option>
+            <option value="RN">	Rio Grande do Norte	</option>
+            <option value="RS">	Rio Grande do Sul	</option>
+            <option value="RO">	Rondônia	</option>
+            <option value="RR">	Roraima	</option>
+            <option value="SC">	Santa Catarina	</option>
+            <option value="SP">	São Paulo	</option>
+            <option value="SE">	Sergipe	</option>
+            <option value="TO">	Tocantins	</option>
+
+        </datalist>
+           
+                
+<!--criar 2 checkbox-->     
+    </div>
+    <div>
+                <input type="checkbox" id="promo" name="promo"
+               checked>
+        <label for="promo">Deseja receber informativos de promoções e avisos?</label>
+    </div>
+    <div>
+        <input type="checkbox" id="termo-uso" name="termo-uso"
+               checked>
+        <label for="termo-uso">Concorda com os termos de uso?</label>
+      </div>
+
+    <div>
+        <input type="button" value="Cadastrar" onClick="validarSenha()">
+    </div>
+</article>
+<!--Inserindo um audio no formulário-->
+<audio src="audio.mp3" autoplay controls loop></audio>
+<!-- footer é para criar o rodapé do html e address cria o texto de informações de contato -->
+    <footer>
+        <address>
+            Autores: Matheus Barros Furlan & Yan Torre Martins <br>
+            Inscreva-se no curso Fabrica de Programador <a href="https://www.fabricadeprogramador.com.br/" target="-blank"> aqui! </a>
+        </address>
+</footer>
+
+</body>
+</html>
